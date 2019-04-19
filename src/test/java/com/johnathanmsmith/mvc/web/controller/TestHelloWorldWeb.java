@@ -1,3 +1,4 @@
+package com.johnathanmsmith.mvc.web.controller;
 import com.johnathanmsmith.mvc.web.config.WebMVCConfiguration;
 import org.junit.Before;
 import org.junit.Test;
