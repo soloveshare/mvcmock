@@ -38,21 +38,24 @@ public class TestHelloWorldWeb
 
     private MockMvc mockMvc;
 
+    private JSonController jSonController = new JSonController();
+
     @Before
     public void setup()
     {
-        this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
+//        this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
+        this.mockMvc = MockMvcBuilders.standaloneSetup(jSonController).build();
     }
 
-    @Test
+   /* @Test
     public void getHTML() throws Exception
     {
-        /*
+        *//*
             This following code will do 'GET' to the web apps
             and check that the return view is "helloworld"
             and also that it has a attribute "user" to "JohnathanMarkSmith"
 
-         */
+         *//*
         this.mockMvc.perform(get("/ask/JohnathanMarkSmith")
                 .accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
@@ -60,7 +63,7 @@ public class TestHelloWorldWeb
                 .andExpect(MockMvcResultMatchers.model().attribute("user", "JohnathanMarkSmith"));
 
 
-    }
+    }*/
 
     @Test
     public void getJSON() throws Exception
