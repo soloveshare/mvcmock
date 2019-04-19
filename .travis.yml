@@ -9,3 +9,4 @@ script:
 after_success:
 - mvn clean test org.jacoco:jacoco-maven-plugin:prepare-agent install org.jacoco:jacoco-maven-plugin:report
 - mvn org.eluder.coveralls:coveralls-maven-plugin:report -DrepoToken="${COVERALLS}"
+- coveralls
