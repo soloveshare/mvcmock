@@ -1,4 +1,5 @@
 ### SpringMVC-rest-test
+[![Build Status](https://www.travis-ci.org/soloveshare/mvcmock.svg?branch=master)](https://www.travis-ci.org/soloveshare/mvcmock)
 
 This is a very basic example of using Spring MVC, REST and Spring Test Framework using Spring's Java configuration.
 
